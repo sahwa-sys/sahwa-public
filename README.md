@@ -35,3 +35,4 @@ Hold Oracle PDA
 Check frozen_amount / citizenship_level
 ↓
 Allow or reject transfer
+```
