@@ -1,6 +1,6 @@
-HOLD Mechanics
+# HOLD Mechanics
 
-Overview
+## Overview
 
 HOLD is a core mechanism within the Sahwa ecosystem that allows users to voluntarily lock a portion of their SAH tokens for a predefined period of time.
 
@@ -16,7 +16,7 @@ The primary goals of HOLD are:
 
 ⸻
 
-Core Concept
+## Core Concept
 
 When a user activates HOLD, a specified amount of SAH tokens becomes restricted from transfer operations.
 
@@ -33,7 +33,7 @@ This architecture allows Sahwa to maintain user ownership while introducing prot
 
 ⸻
 
-User Hold Status Account
+## User Hold Status Account
 
 HOLD information is stored inside a dedicated PDA account called:
 
@@ -51,7 +51,7 @@ is_active	Current HOLD status
 
 ⸻
 
-Frozen Amount
+## Frozen Amount
 
 The frozen_amount parameter defines how many SAH tokens are protected by HOLD restrictions.
 
@@ -75,7 +75,7 @@ This mechanism creates measurable commitment without requiring token custody tra
 
 ⸻
 
-HOLD Lifecycle
+## HOLD Lifecycle
 
 Active HOLD
 
@@ -97,7 +97,7 @@ Transfer Rejected
 
 ⸻
 
-Inactive HOLD
+### Inactive HOLD
 
 A HOLD is considered inactive when:
 
@@ -114,7 +114,7 @@ Transfer Allowed
 
 ⸻
 
-Expired HOLD
+### Expired HOLD
 
 A HOLD is considered expired when:
 
@@ -134,7 +134,7 @@ Transfer Allowed
 
 ⸻
 
-Runtime Validation Flow
+## Runtime Validation Flow
 
 Every SAH transfer passes through the Token-2022 Transfer Hook layer.
 
@@ -161,7 +161,7 @@ This validation occurs before token movement is finalized.
 
 ⸻
 
-Transfer Hook Integration
+## Transfer Hook Integration
 
 The HOLD system is enforced through Solana SPL Token-2022 Transfer Hooks.
 
@@ -176,7 +176,7 @@ Transfer restrictions are verified directly during token movement.
 
 ⸻
 
-Relationship with Digital Citizenship
+## Relationship with Digital Citizenship
 
 HOLD serves as a foundational component of the Digital Citizenship system.
 
@@ -193,33 +193,33 @@ This creates a direct relationship between commitment and ecosystem privileges.
 
 ⸻
 
-Ecosystem Benefits
+## Ecosystem Benefits
 
 The HOLD mechanism provides several advantages:
 
-Long-Term Alignment
+### Long-Term Alignment
 
 Encourages participants to support ecosystem growth over longer time horizons.
 
-Governance Readiness
+### Governance Readiness
 
 Creates a framework for future DAO participation and voting rights.
 
-Sybil Resistance
+### Sybil Resistance
 
 Increases the cost of creating disposable governance identities.
 
-Citizenship Qualification
+### Citizenship Qualification
 
 Supports Digital Citizenship requirements and progression systems.
 
-Sustainable Growth
+### Sustainable Growth
 
 Aligns incentives between token holders and ecosystem development.
 
 ⸻
 
-Current Development Status
+## Current Development Status
 
 Implemented Components:
 
@@ -245,7 +245,7 @@ Devnet Deployment Pending
 
 ⸻
 
-Future Expansion
+## Future Expansion
 
 Planned future enhancements may include:
 
